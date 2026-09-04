@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amarillo's Premier Auto Detailing | Luxury Mobile Care</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .glass-card {
+      background: rgba(18, 18, 24, 0.85);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+  </style>
+</head>
+<body class="bg-[#0b0c10] text-zinc-100 antialiased selection:bg-amber-400 selection:text-black">
+
+  <!-- Status Pill -->
+  <div class="sticky top-4 z-50 flex justify-center px-4">
+    <div class="glass-card px-4 py-2 rounded-full shadow-2xl flex items-center gap-2 border border-amber-500/40">
+      <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+      <span class="text-xs font-semibold text-zinc-200">★ 5.0 Star Auto Detailing • Amarillo, TX</span>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="pt-12 pb-10 px-6 text-center max-w-xl mx-auto">
+    <span class="inline-block px-3.5 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase bg-amber-400/10 text-amber-400 border border-amber-400/20 mb-4">
+      Mobile Service • We Come To You
+    </span>
+    <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
+      Amarillo’s Premier <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-200">Auto Detailing</span>
+    </h1>
+    <p class="text-zinc-400 mt-3 text-sm leading-relaxed max-w-md mx-auto">
+      Concourse-level interior shampoo extraction, engine bay detailing, and high-gloss paint protection across Amarillo.
+    </p>
+    
+    <div class="mt-7 flex gap-3 justify-center">
+      <a href="#services" class="bg-gradient-to-r from-amber-400 to-yellow-500 hover:opacity-95 text-black font-extrabold px-6 py-3.5 rounded-xl shadow-lg transition text-sm">
+        View Packages
+      </a>
+      <a href="tel:+18066403939" class="glass-card hover:bg-zinc-800 text-zinc-200 font-semibold px-5 py-3.5 rounded-xl transition text-sm">
+        Call (806) 640-3939
+      </a>
+    </div>
+  </header>
+
+  <!-- Interactive Before / After Gallery -->
+  <section class="py-4 px-6 max-w-xl mx-auto">
+    <div class="text-center mb-3">
+      <h2 class="text-xs uppercase tracking-widest text-amber-400 font-bold">Transformation Slider</h2>
+      <p class="text-sm font-semibold text-zinc-300">Drag to inspect interior restoration</p>
+    </div>
+
+    <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden select-none border border-zinc-800 shadow-2xl glass-card">
+      <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=800&q=80" 
+           alt="After Detailing" 
+           class="absolute inset-0 w-full h-full object-cover">
+      <span class="absolute top-3 right-3 bg-amber-400 text-black text-[10px] font-black uppercase px-2 py-0.5 rounded shadow">After</span>
+
+      <div id="beforeWrap" class="absolute inset-0 w-1/2 overflow-hidden border-r-2 border-amber-400">
+        <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&w=800&q=80" 
+             alt="Before Detailing" 
+             class="absolute inset-0 w-full h-full object-cover max-w-none" style="width: 200%;">
+        <span class="absolute top-3 left-3 bg-black/80 text-zinc-300 text-[10px] font-black uppercase px-2 py-0.5 rounded shadow">Before</span>
+      </div>
+
+      <input type="range" min="0" max="100" value="50" id="rangeInput" class="absolute inset-0 opacity-0 cursor-ew-resize w-full h-full z-20">
+    </div>
+  </section>
+
+  <!-- Signature Packages -->
+  <section id="services" class="py-6 px-6 max-w-xl mx-auto space-y-4">
+    <div class="flex items-center justify-between">
+      <h2 class="text-xl font-bold tracking-wide text-white">Packages</h2>
+      <span class="text-xs text-amber-400 font-semibold uppercase">Pricing</span>
+    </div>
+
+    <!-- Complete Detail -->
+    <div class="glass-card rounded-2xl p-5 border-2 border-amber-400/80 shadow-2xl relative">
+      <span class="absolute -top-3 right-4 bg-amber-400 text-black text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full tracking-wider">
+        Most Popular
+      </span>
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="font-bold text-lg text-white">Premier Full Reset</h3>
+          <p class="text-xs text-amber-400 font-semibold mt-0.5">Interior Steam & Exterior Gloss Shield</p>
+        </div>
+        <span class="text-amber-400 font-black text-2xl">$185+</span>
+      </div>
+      <p class="text-xs text-zinc-400 mt-2.5 leading-relaxed">
+        Foam cannon hand bath, clay bar decontamination, machine wax buff, deep seat extraction shampoo, and complete vent sanitization.
+      </p>
+    </div>
+
+    <!-- Interior Only -->
+    <div class="glass-card rounded-2xl p-5">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="font-bold text-lg text-white">Deep Interior Extraction</h3>
+          <p class="text-xs text-zinc-400 mt-0.5">Pet Hair, Stains & Odor Removal</p>
+        </div>
+        <span class="text-zinc-100 font-black text-xl">$115+</span>
+      </div>
+      <p class="text-xs text-zinc-400 mt-2 leading-relaxed">
+        Carpet shampoo agitation, leather conditioner scrub, console detail, and streak-free interior glass.
+      </p>
+    </div>
+
+    <!-- Engine & Exterior -->
+    <div class="glass-card rounded-2xl p-5">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="font-bold text-lg text-white">Engine Bay & Hand Wax</h3>
+          <p class="text-xs text-zinc-400 mt-0.5">Under-The-Hood Revival</p>
+        </div>
+        <span class="text-zinc-100 font-black text-xl">$90+</span>
+      </div>
+      <p class="text-xs text-zinc-400 mt-2 leading-relaxed">
+        Engine degreaser dressing, wheel de-ironing, dual bucket wash, and synthetic polymer paint sealant.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA Box -->
+  <section class="py-8 px-6 max-w-xl mx-auto">
+    <div class="glass-card rounded-2xl p-6 text-center border border-amber-400/40">
+      <h3 class="font-extrabold text-xl text-white">Schedule Mobile Appointment</h3>
+      <p class="text-xs text-zinc-400 mt-1 mb-5">Tap below to text Amarillo’s detailing unit directly.</p>
+      <a href="sms:+18066403939?body=Hi%20Amarillo's%20Premier%20Auto%20Detailing,%20I'd%20like%20to%20get%20a%20quote%20for%20a%20detail." class="block w-full bg-gradient-to-r from-amber-400 to-yellow-500 text-black font-extrabold py-3.5 rounded-xl shadow-lg transition text-sm">
+        Text For Fast Estimate
+      </a>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 text-[11px] text-zinc-600 border-t border-zinc-900">
+    © Amarillo's Premier Auto Detailing • Precision Mobile Units
+  </footer>
+
+  <script>
+    const slider = document.getElementById('rangeInput');
+    const beforeWrap = document.getElementById('beforeWrap');
+    slider.addEventListener('input', (e) => {
+      beforeWrap.style.width = `${e.target.value}%`;
+    });
+  </script>
+</body>
+</html>
